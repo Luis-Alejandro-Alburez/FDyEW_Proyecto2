@@ -1,0 +1,230 @@
+/* Estilos generales */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+header .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;    
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin: 0 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    background: url('img/3253570.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.services, .about, .map, .testimonials, .contact {
+    margin-top: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-images {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 100%;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-menu, .footer-contact {
+    list-style: none;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-contact li {
+    margin: 5px 0;
+}
+
+/* Estilos```css */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-menu, .footer-contact {
+    list-style: none;
+    text-align: center;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-contact li {
+    margin: 5px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .about-content, .about-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+              
+    }
+
+    header input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+    }
+
+    header .hamburger {        
+        display: block;
+    }
+
+    .service-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1800px) {
+    .about-content, .about-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.space-3br {
+    margin-top: 55px;
+}

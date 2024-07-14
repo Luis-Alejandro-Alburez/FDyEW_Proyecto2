@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú inicial -->
+    <header>
+        <nav>
+            <div class="logo">Tech Solutions</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#map">Ubicación</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contáctenos</a></li>
+                <li><a>.</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Bienvenidos a Tech Solutions</h1>
+            <p>Innovación y tecnología a tu alcance</p>
+        </div>        
+    </section>
+
+    <!-- Sección de servicios -->     
+    <section id="services" class="services">
+        <div class="space-3br"></div>
+        <h2>Nuestros Servicios</h2>
+        <div class="service-grid">
+            <div class="service-item">Desarrollo Web</div>
+            <div class="service-item">Consultoría IT</div>
+            <div class="service-item">Soporte Técnico</div>
+            <div class="service-item">Ciberseguridad</div>
+        </div>
+    </section>
+
+    <!-- Descripción de la empresa -->
+    <section id="about" class="about">
+        <div class="space-3br"></div>
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>En Tech Solutions, nos especializamos en ofrecer soluciones tecnológicas innovadoras. Nuestro equipo de expertos está dedicado a proporcionar servicios de calidad que mejoren la eficiencia y productividad de su negocio.</p>
+            </div>
+            <div class="about-images">
+                <img src="img/servicios1.jpg" alt="Servicio 1">
+                <img src="img/servicios2.jpg" alt="Servicio 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa con sucursal -->
+    <section id="map" class="map">
+        <div class="space-3br"></div>
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.852174170204!2d-89.22015848485091!3d13.692940390364073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633fc0b07a5e5d%3A0x8c6b2c7e31ef5b7b!2sGuatemala!5e0!3m2!1sen!2s!4v1623602874008!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonials" class="testimonials">
+        <div class="space-3br"></div>
+        <h2>Testimonios</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-item">
+                <img src="img/persona1.jpg" alt="Persona 1">
+                <p>"Tech Solutions transformó nuestro negocio."</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="img/persona2.jpg" alt="Persona 2">
+                <p>"Excelente servicio y soporte técnico."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contáctenos -->
+    <section id="contact" class="contact">
+        <div class="space-3br"></div>
+        <h2>Contáctenos</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tech Solutions. Todos los derechos reservados.</p>
+            <ul class="footer-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contáctenos</a></li>
+            </ul>
+            <ul class="footer-contact">
+                <li>Teléfono: +502 1234 5678</li>
+                <li>Email: info@techsolutions.com</li>
+                <li>Dirección: Ciudad de Guatemala, Guatemala</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
