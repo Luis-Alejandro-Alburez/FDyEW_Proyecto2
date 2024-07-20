@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Menú inicial -->
+    <div class="body-container">
+        <!-- Menú inicial -->
     <header>
         <nav>
             <div class="logo">Tech Solutions</div>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <div class="nav-buttons">                          
-                <a href="index mobile.html" class="layout-link" onclick="setLayout('mobile')"><i class="fas fa-mobile-alt"></i></a>
+                <a href="#" class="layout-link" onclick="setLayout('mobile')"><i class="fas fa-mobile-alt"></i></a>
                 <a href="index tablet.html" class="layout-link" onclick="setLayout('tablet')"><i class="fas fa-tablet-alt"></i></a>
-                <a href="#" class="layout-link" onclick="setLayout('desktop')"><i class="fas fa-desktop"></i></a>                
+                <a href="index.html" class="layout-link" onclick="setLayout('desktop')"><i class="fas fa-desktop"></i></a>                
             </div>
             <ul class="menu">                             
                 <li><a href="#home">Inicio</a></li>
@@ -70,7 +71,7 @@
     <section id="map" class="map">
         <div class="space-3br"></div>
         <h2>Ubicación</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.852174170204!2d-89.22015848485091!3d13.692940390364073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633fc0b07a5e5d%3A0x8c6b2c7e31ef5b7b!2sGuatemala!5e0!3m2!1sen!2s!4v1623602874008!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.852174170204!2d-89.22015848485091!3d13.692940390364073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633fc0b07a5e5d%3A0x8c6b2c7e31ef5b7b!2sGuatemala!5e0!3m2!1sen!2s!4v1623602874008!5m2!1sen!2s" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- Sección de testimonios -->
@@ -123,5 +124,6 @@
             </ul>
         </div>
     </footer>
+    </div>
 </body>
 </html>

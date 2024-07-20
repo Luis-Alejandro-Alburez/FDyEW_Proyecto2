@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles tablet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Menú inicial -->
+    <div class="body-container">
+        <!-- Menú inicial -->
     <header>
         <nav>
             <div class="logo">Tech Solutions</div>
@@ -16,8 +17,8 @@
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             <div class="nav-buttons">                          
                 <a href="index mobile.html" class="layout-link" onclick="setLayout('mobile')"><i class="fas fa-mobile-alt"></i></a>
-                <a href="index tablet.html" class="layout-link" onclick="setLayout('tablet')"><i class="fas fa-tablet-alt"></i></a>
-                <a href="#" class="layout-link" onclick="setLayout('desktop')"><i class="fas fa-desktop"></i></a>                
+                <a href="#" class="layout-link" onclick="setLayout('tablet')"><i class="fas fa-tablet-alt"></i></a>
+                <a href="index.html" class="layout-link" onclick="setLayout('desktop')"><i class="fas fa-desktop"></i></a>                
             </div>
             <ul class="menu">                             
                 <li><a href="#home">Inicio</a></li>
@@ -123,5 +124,6 @@
             </ul>
         </div>
     </footer>
+    </div>
 </body>
 </html>

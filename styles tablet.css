@@ -4,7 +4,32 @@ body, h1, h2, p, ul, li, a {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    width: 1000px;     
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #8094a1;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background-color: #fff;
+}
+
 
 header, section, footer {
     padding: 20px;
@@ -190,43 +215,8 @@ footer {
     margin: 5px 0;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .about-content, .about-images {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-              
-    }
-
-    header input[type="checkbox"]:checked ~ .menu {
-        display: flex;
-    }
-
-    header .hamburger {        
-        display: block;
-    }
-
-    .service-grid, .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 1800px) {
-    .about-content, .about-images {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .space-3br {
-    margin-top: 55px;
+    margin-top: 175px;
 }
 
 .mobile-layout .banner-content {
@@ -244,4 +234,28 @@ footer {
 .layout-link {
     margin-left: 8px;
     margin-right: 8px;
+}
+
+.about-content, .about-images {
+    flex-direction: column;
+    align-items: center;
+}
+
+header .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;          
+}
+
+header input[type="checkbox"]:checked ~ .menu {
+    display: flex;
+}
+
+header .hamburger {        
+    display: block;
+}
+
+.service-grid, .testimonials-grid {
+    grid-template-columns: 1fr;
 }
